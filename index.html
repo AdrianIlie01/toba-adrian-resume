@@ -17,29 +17,64 @@
         <div>
             <h1 id="user-name">Toba Ilie Adrian</h1>
             <p id="bio">Student at University of Pitesti</p>
-            <p id="email">ilieadrian01@yahoo.com</p>
+            <a class="personal_info" href="mailto:ilieadrian01@yahoo.com">
+                <img src="resources/email.png" alt="Email logo">
+                ilieadrian01@yahoo.com</a>
+            <p class="personal_info">
+                <img src="resources/phone.png" alt="Phone logo">
+                (+40) 0759061848
+            </p>
+
         </div>
     </section>
 
     <section class="section--page">
-
-        <div id="socials--list">
-            <a href="https://www.linkedin.com/in/adrianilie01/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/AdrianIlie01" target="_blank">GitHub</a>
-            <a href="./resources/resume.pdf" target="_blank">Download Resume</a>
-        </div>
+        <nav id="socials--list">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/adrianilie01/" target="_blank">
+                        <img src="resources/linkedin.svg" alt="LinkedIn logo">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/AdrianIlie01" target="_blank">
+                             <img src="resources/github-mark.svg" alt="Github logo">
+                             GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.bestjobs.eu/ro/cv/6ebb81f5-3922-4a7e-b8be-c44b11f632d9" target="_blank">
+                        <img src="resources/best-jobs.png" alt="BestJobs logo">
+                        Best Jobs
+                    </a>
+                </li>
+                <li>
+                    <a href="./resources/resume.pdf" target="_blank">
+                        <img src="resources/resume.png"> View Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </section>
 
     <section class="section--page">
         <h2>Skills</h2>
 
         <div class="line-break"></div>
-        <div class="wrapper--skills--items">
-            <div class="card--skills"><span>TypeScript, NodeJS, PHP</span></div>
-            <div class="card--skills"><span>ExpressJS, NestJS</span></div>
-            <div class="card--skills"><span>ReactJS, Angular</span></div>
-            <div class="card--skills"><span>MySQL, Postgres</span></div>
-            <div class="card--skills"><span>Docker, REST API</span></div>
+        <div class="wrapper--skills--items border-left">
+            <div class="card--skills"><span>TypeScript</span></div>
+            <div class="card--skills"><span>NodeJS</span></div>
+            <div class="card--skills"><span>PHP</span></div>
+            <div class="card--skills"><span>ExpressJS</span></div>
+            <div class="card--skills"><span>NestJS</span></div>
+            <div class="card--skills"><span>ReactJS</span></div>
+            <div class="card--skills"><span>Angular</span></div>
+            <div class="card--skills"><span>Laravel</span></div>
+            <div class="card--skills"><span>MySQL</span></div>
+            <div class="card--skills"><span>Postgres</span></div>
+            <div class="card--skills"><span>Docker</span></div>
+            <div class="card--skills"><span>REST API</span></div>
         </div>
     </section>
 
@@ -48,7 +83,13 @@
 
         <div class="line-break"></div>
         <div class="card--education">
-            <strong>Internship</strong>
+            <strong>FREELANCER</strong>
+            <p>2022 - Present</p>
+        </div>
+
+        <div class="line-break"></div>
+        <div class="card--education">
+            <strong>INTERNSHIP</strong>
             <p>06/2021 - 08/2021</p>
             <p>CRYSTAL TALENT SOLUTIONS (COURSE) - DATA SCIENCE AND DATA ENGINEERING</p>
         </div>
@@ -73,7 +114,23 @@
     <section class="section--page">
         <h2>Projects & Accomplishments</h2>
 
-        <div class="card--project">
+        <div class="card--project border-top">
+            <a href="https://github.com/AdrianIlie01/categories-subcategories" >I developed a NodeJS application with pagination, filtering and sorting functionality
+                that enables the management of categories and subcategories CRUD operations and integrated a ReactJS frontend.
+            </a>
+
+            <p>Technology used</p>
+            <ul class="technology--list">
+                <li>✔️ Typescript</li>
+                <li>✔️ NodeJS</li>
+                <li>✔️ NestJs</li>
+                <li>✔️ ReactJS</li>
+                <li>✔️ Docker</li>
+                <li>✔️ MySQL</li>
+            </ul>
+        </div>
+
+        <div class="card--project border-top">
             <a href="https://github.com/AdrianIlie01/project" >Build a full-stack web application using NodeJS and NestJS for the backend and Angular for the frontend,
             designed to manage customers portfolios using CRUD operations for customer and portfolio data.
             </a>
@@ -88,7 +145,7 @@
             </ul>
         </div>
 
-        <div class="card--project">
+        <div class="card--project border-top">
             <a href="https://github.com/AdrianIlie01/pwp-scraping">Developed a PHP scraping project for learning purposes using Laravel and Docker
             to extract data and images from a website's announcements and their owner.
             </a>

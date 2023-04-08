@@ -1,24 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
-
+@import url('https://unpkg.com/open-props/open-props.min.css');
+@import url('https://unpkg.com/open-props/normalize.min.css');
 :root{
     --mainTextColor-light:#000;
     --secondaryTextColor-light:rgb(51 51 51);
     --mainLinkColor-light:#0da2b8;
-    --mainBorderColor-light:rgb(218, 218, 218);
     --mainBgColor-light:rgb(249, 250,251);
-
-    --mainTextColor-dark:#fff;
-    --secondaryTextColor-dark:#adb0b1;
-    --mainLinkColor-dark:rgb(30, 190,214);
-    --mainBorderColor-dark:#2b3031;
-    --mainBgColor-dark:#131415;
+    --mainBorderColor:  linear-gradient(#3f87a6, #ebf8e1, #48abe0);
+    --color:  linear-gradient(0.25turn, #3f87a6, #ebf8e1, #48abe0);
 
     --mainTextColor:var(--mainTextColor-light);
     --secondaryTextColor:var(--secondaryTextColor-light);
     --mainLinkColor:var(--mainLinkColor-light);
-    --mainBorderColor:var(--mainBorderColor-light);
     --mainBgColor:var(--mainBgColor-light);
 
+    --ease-elastic-1:cubic-bezier(.5,.75,.75,1.25)
 }
 
 
@@ -46,7 +42,16 @@ a{
 }
 
 li{
+    list-style-type: none;
     line-height: 1.9em;
+}
+
+ul li a {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: 16px 1fr ;
+    gap: 0.25rem;
 }
 
 #container--main{
@@ -66,7 +71,12 @@ li{
     gap: 4em;
 }
 
-#bio, a{
+#bio{
+    font-weight: 300;
+    margin-top: 1em;
+}
+
+a{
     font-weight: 300;
 }
 
@@ -82,15 +92,21 @@ li{
     border-radius: 50%;
 }
 
-#email{
+.personal_info{
     color: var(--mainTextColor);
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-columns: 16px 1fr ;
+    gap: 0.25rem;
 }
 
-#socials--list{
+#socials--list ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 1em;
-    flex-wrap: wrap;
+
 }
 
 #socials--list a{
@@ -116,23 +132,33 @@ li{
     gap: 1em;
     font-size: 0.9em;
 
-    border-left: 1px solid var(--mainBorderColor);
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
 }
 
 .card--skills{
-    border: 1px solid var(--mainBorderColor);
-    border-radius: 5px;
-    padding: 0.5em 1em;
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+    linear-gradient(90deg, transparent 0%, #48abe0 100%);
+
+    border-radius: 8px;
+    padding: 9px;
+
+    /*border: 1px solid transparent;*/
+    /*border-image: var(--mainBorderColor);*/
+    /*border-image-slice: 1;*/
+
     align-items: center;
 }
 
 .card--project{
     padding-top: 1em;
     padding-bottom: 1em;
-    border-top: 1px solid var(--mainBorderColor);
 }
 
 .card--project a{
@@ -146,16 +172,31 @@ li{
 
 }
 
+.border-top{
+    border-top: 1px solid transparent;
+    border-image: var(--mainBorderColor);
+    border-image-slice: 1;    margin-top: 3em;
+}
+
+.border-left{
+    border-left: 1px solid transparent;
+    border-image: var(--mainBorderColor);
+    border-image-slice: 1;
+}
+
 .card--education{
-    border-left: 1px solid var(--mainBorderColor);
+    border-left: 1px solid transparent;
+    border-image: var(--mainBorderColor);
+    border-image-slice: 1;
+
     margin-top: 3em;
     margin-bottom: 3em;
     padding-left: 2em;
 }
 
 .line-break{
-    background-color: var(--mainBorderColor);
-    height: 1px;
+    background: var(--color);
+    height: 2px;
 }
 
 

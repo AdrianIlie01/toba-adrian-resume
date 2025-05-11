@@ -199,6 +199,27 @@ a{
     height: 2px;
 }
 
+.indent {
+    margin-top: 10px;
+}
+
+.list > li {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+    font-size: 1rem;
+}
+
+.demo {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    /*margin-left: 10px;*/
+}
+
+.demo > a {
+    color: green!important;
+}
 
 @media(max-width:600px){
 

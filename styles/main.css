@@ -203,6 +203,11 @@ a{
     margin-top: 10px;
 }
 
+.project-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 .list > li {
     margin-left: 20px;
     margin-top: 15px;
@@ -218,7 +223,11 @@ a{
 }
 
 .demo > a {
-    color: green!important;
+    color: #1E90FF !important;
+}
+
+.demo > a:hover {
+    color: rgb(30, 190,214)!important;
 }
 
 @media(max-width:600px){

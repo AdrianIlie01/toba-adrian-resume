@@ -1,257 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Toba Adrian</title>
-    <meta name="description" content="">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/main.css">
+    <title>Adrian Ilie - Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-<div id="container--main">
-
-    <section id="wrapper--hero" class="section--page">
-        <img id="profile_img" src="./resources/profile_img.jpg">
-
-        <div>
-            <h1 id="user-name">Toba Ilie Adrian</h1>
-            <p id="bio">Full-Stack Web Developer | TypeScript, Node.js, React, Angular</p>
-            <a class="personal_info" href="mailto:ilieadrian01@yahoo.com">
-                <img src="resources/email.png" alt="Email logo">
-                ilieadrian01@yahoo.com</a>
-            <p class="personal_info">
-                <img src="resources/phone.png" alt="Phone logo">
-                (+40) 0759061848
-            </p>
-
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <div class="hero-content container">
+        <img src="./resources/profile_img.jpg" alt="Adrian Ilie" class="profile-pic">
+        <div class="hero-text">
+            <h1>Adrian Ilie</h1>
+            <p class="subtitle">Full-Stack Developer | TypeScript · Node.js · Angular · React</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="section--page">
-        <nav id="socials--list">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/adrianilie01/" target="_blank">
-                        <img src="resources/linkedin.svg" alt="LinkedIn logo">
-                        LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/AdrianIlie01" target="_blank">
-                             <img src="resources/github-mark.svg" alt="Github logo">
-                             GitHub
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.bestjobs.eu/ro/cv/6ebb81f5-3922-4a7e-b8be-c44b11f632d9" target="_blank">
-                        <img src="resources/best-jobs.png" alt="BestJobs logo">
-                        Best Jobs
-                    </a>
-                </li>
-                <li>
-                    <a href="./resources/resume.pdf" target="_blank">
-                        <img src="resources/resume.png"> View Resume
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </section>
+<!-- About Me Section -->
+<section id="about" class="about-section container">
+    <h2>About Me</h2>
+    <p class="about-me">Hello! I'm Adrian, a passionate software developer with a focus on creating beautiful and performant web applications. With experience in front-end and back-end technologies.</p>
+</section>
 
-    <section class="section--page">
-        <h2>Skills</h2>
+<!-- Skills Section -->
+<section id="skills" class="skills-section container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
 
-        <div class="line-break"></div>
-        <div class="wrapper--skills--items border-left">
-            <div class="card--skills"><span>REST API</span></div>
-            <div class="card--skills"><span>TypeScript</span></div>
-            <div class="card--skills"><span>NodeJS</span></div>
-            <div class="card--skills"><span>NestJS</span></div>
-            <div class="card--skills"><span>ExpressJS</span></div>
-            <div class="card--skills"><span>PHP</span></div>
-            <div class="card--skills"><span>React</span></div>
-            <div class="card--skills"><span>Angular</span></div>
-            <div class="card--skills"><span>MySQL</span></div>
-            <div class="card--skills"><span>Postgres</span></div>
-            <div class="card--skills"><span>Redis</span></div>
-            <div class="card--skills"><span>Firebase</span></div>
-            <div class="card--skills"><span>Docker</span></div>
-            <div class="card--skills"><span>Stripe</span></div>
+        <div class="skill-item">
+            <i class="devicon-html5-plain"></i>
+            <span>HTML5</span>
         </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Experience</h2>
-
-        <div class="line-break"></div>
-        <div class="card--education">
-            <strong>Full-stack Developer</strong>
-            <p>04/2023 - 08/2023</p>
-            <p><strong>1. Live Streaming Platform</strong></p>
-
-            <p class="indent">
-                Built a live streaming platform from scratch, handling both frontend and backend development.
-
-            </p>
-            <ul class="list">
-                <li>Developed the web application using Angular and Node.js (with NestJS), and used Capacitor to build a mobile version of the app for iOS and Android.</li>
-                <li>Implemented secure role-based authentication with two-factor authentication.</li>
-                <li>Integrated Stripe for donations, recurring payments, and subscriptions, offering users access to different features based on their subscription level.</li>
-                <li>Built a real-time chat using Firebase.</li>
-                <li>Embedded YouTube and Vimeo videos using iframes.</li>
-            </ul>
-
-            <p><strong>2. Service Selection and Estimation System</strong><p>
-
-            <p class="indent">
-            <p>Worked on a project for a company offering interior and exterior services, developing a system that removed the need for clients to reach out for details about available services and pricing.</p>
-
-            </p>
-
-            <ul class="list">
-                <li>Developed a dynamic system that guided users through a series of questions, each based on the options they had previously selected.</li>
-                <li>Automated the creation and email delivery of personalized PDFs, including selected options and estimated pricing.</li>
-            </ul>
+        <div class="skill-item">
+            <i class="devicon-css3-plain"></i>
+            <span>CSS3</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-angular-plain"></i>
+            <span>Angular</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-react-original"></i>
+            <span>React</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-nodejs-plain"></i>
+            <span>Node.js</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-nestjs-plain"></i>
+            <span>NestJS</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-express-original"></i>
+            <span>Express.js</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-mysql-plain"></i>
+            <span>MySQL</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-postgresql-plain"></i>
+            <span>PostgreSQL</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-mongodb-plain"></i>
+            <span>MongoDB</span>
         </div>
 
-    </section>
-
-
-    <section class="section--page">
-        <h2>Education</h2>
-
-        <div class="line-break"></div>
-
-        <div class="card--education">
-            <strong>MASTER'S DEGREE</strong>
-            <p>10/2022 - 07/2024</p>
-            <p>University POLITEHNICA of Bucharest - ADVANCED TECHNIQUES FOR INFORMATION PROCESSING</p>
+        <div class="skill-item">
+            <i class="devicon-redis-plain"></i>
+            <span>Redis</span>
         </div>
 
-
-        <div class="line-break"></div>
-        <div class="card--education">
-            <strong>INTERNSHIP</strong>
-            <p>06/2021 - 08/2021</p>
-            <p>CRYSTAL TALENT SOLUTIONS (COURSE) - DATA SCIENCE AND DATA ENGINEERING</p>
+        <div class="skill-item">
+            <i class="devicon-firebase-plain"></i>
+            <span>Firebase</span>
+        </div>
+        <div class="skill-item">
+            <img src="./resources/icons/stripe.svg" alt="Stripe" class="img-skill">
+            <span class="title-svg">Stripe</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-docker-plain"></i>
+            <span>Docker</span>
+        </div>
+        <div class="skill-item">
+            <i class="devicon-git-plain"></i>
+            <span>Git</span>
         </div>
 
-        <div class="line-break"></div>
+    </div>
+</section>
 
-        <div class="card--education">
-            <strong>BACHELOR'S DEGREE</strong>
-            <p>10/2019 - 07/2022</p>
-            <p>University of  Pitesti - Informatics</p>
+<!-- Projects Section -->
+<section id="projects" class="projects-section container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Movie Review Web Application</h3>
+            <p class="product-description">A feature-rich movie review platform with user authentication, interactive content, and admin dashboard for user and content management.</p>
+            <a href="https://movie-review-front.onrender.com/home" target="_blank" class="project-link">View Project</a>
         </div>
-    </section>
-
-    <section class="section--page">
-        <h2>Personal Projects</h2>
-
-        <div class="card--project border-top">
-
-            <p class="project-title">eCommerce Web Application</p>
-
-            <a href="https://ecommerce-frontend-t5lt.onrender.com/" >
-                I developed an eCommerce web application where users can view, sort, and filter furniture products, add them to a shopping cart, and complete their purchase through Stripe with automatic payment confirmation.
-            </a>
-
-            <p class="demo">
-                🔗 Live Demo:
-                <a class="demo-url" href="https://ecommerce-frontend-t5lt.onrender.com/" >
-                https://ecommerce-frontend-t5lt.onrender.com</a>
-            </p>
-
-            <p>Technology used</p>
-            <ul class="technology--list">
-                <li>✔️ Typescript</li>
-                <li>✔️ NodeJS</li>
-                <li>✔️ NestJs</li>
-                <li>✔️ TypeOrm</li>
-                <li>✔️ Stripe</li>
-                <li>✔️ Angular</li>
-                <li>✔️ Docker</li>
-                <li>✔️ MySQL</li>
-            </ul>
+        <div class="project-card">
+            <h3>E-commerce Store</h3>
+            <p class="product-description">An online furniture store with product sorting, filtering, shopping cart, integrating Stripe for payment processing.</p>
+            <a href="https://ecommerce-frontend-t5lt.onrender.com" target="_blank" class="project-link">View Project</a>
         </div>
+    </div>
+</section>
 
-        <div class="card--project border-top">
+<!-- Experience Section -->
+<section id="experience" class="experience-section container">
+    <h2>Experience</h2>
+    <div class="experience-item">
+        <h3>Full-Stack Developer </h3>
+        <span>2023 - 2024</span>
+            <p class="experience-description">Developed full applications from start to finish, including front-end and back-end components.</p>
+            <p class="experience-description">Collaborated directly with clients during project execution.</p>
+        <p class="experience-description">Helped the project manager by drafting and preparing proposals, and conducted research to select appropriate technologies.</p>
+    </div>
+</section>
 
-            <p class="project-title">Customer Manager</p>
+<!-- Education Section -->
+<section id="education" class="education-section container">
+    <h2>Education</h2>
 
-            <a href="https://github.com/AdrianIlie01/project" >Build a full-stack web application using NodeJS and NestJS for the backend and Angular for the frontend,
-                designed to manage customers portfolios using CRUD operations for customer and portfolio data.
-            </a>
+    <div class="education-item">
+        <h3>Master's Degree in Advanced Techniques for Information Processing</h3>
+        <span>01/10/2022 – 04/07/2024</span>
+        <p class="education-description">University Politehnica of Bucharest</p>
+    </div>
 
-            <p class="demo">
-                🔗 GitHub Repo:
-                <a class="demo-url" href="https://github.com/AdrianIlie01/customer-manager" >
-                    https://github.com/AdrianIlie01/customer-manager</a>
-            </p>
-            <p>Technology used</p>
-            <ul class="technology--list">
-                <li>✔️ Typescript</li>
-                <li>✔️ NodeJS</li>
-                <li>✔️ NestJs</li>
-                <li>✔️ Angular</li>
-                <li>✔️ Docker</li>
-                <li>✔️ MySQL</li>
-            </ul>
+    <div class="education-item">
+        <h3>Bachelor’s Degree in Computer Science</h3>
+        <span>01/10/2019 – 06/07/2022</span>
+        <p class="education-description">University of Pitesti</p>
+    </div>
+
+    <div class="education-item">
+        <h3>Internship - Data Science & Data Engineering</h3>
+        <span>10/06/2021 – 10/08/2021</span>
+        <p class="education-description">Crystal Talent Solutions</p>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+        <p>Contact: <a href="mailto:ilieadrian01@yahoo.com">ilieadrian01@yahoo.com</a></p>
+        <p>Phone: <a href="tel:+40759061848">+40 759 061 848</a> |
+          <a href="https://wa.me/40759061848" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+         </p>
+        <div class="social-icons">
+            <a href="https://github.com/AdrianIlie01" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adrianilie01/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-
-        <div class="card--project border-top">
-
-            <p class="project-title">Category Management System</p>
-
-            <a href="https://github.com/AdrianIlie01/categories-subcategories" >I developed a NodeJS application with pagination, filtering and sorting functionality
-                that enables the management of categories and subcategories CRUD operations and integrated a ReactJS frontend.
-            </a>
-
-            <p class="demo">
-                🔗 GitHub Repo:
-                <a class="demo-url" href="https://github.com/AdrianIlie01/categories-subcategories" >
-                    https://github.com/AdrianIlie01/categories-subcategories</a>
-            </p>
-
-
-            <p>Technology used</p>
-            <ul class="technology--list">
-                <li>✔️ Typescript</li>
-                <li>✔️ NodeJS</li>
-                <li>✔️ NestJs</li>
-                <li>✔️ ReactJS</li>
-                <li>✔️ Docker</li>
-                <li>✔️ MySQL</li>
-            </ul>
-        </div>
-
-        <div class="card--project border-top">
-
-            <p class="project-title">Web Scraping Tool</p>
-
-            <a href="https://github.com/AdrianIlie01/pwp-scraping">Developed a PHP scraping project for learning purposes using Laravel and Docker
-            to extract data and images from a website's announcements and their owner.
-            </a>
-
-            <p class="demo">
-                🔗 GitHub Repo:
-                <a class="demo-url" href="https://github.com/AdrianIlie01/pwp-scraping" >
-                    https://github.com/AdrianIlie01/pwp-scraping</a>
-            </p>
-
-            <p>Technology used</p>
-            <ul class="technology--list">
-                <li>✔️ PHP</li>
-                <li>✔️ Laravel</li>
-                <li>✔️ Docker</li>
-                <li>✔️ MySQL</li>
-            </ul>
-        </div>
-
-    </section>
-
-
-</div>
-
+    </div>
+</footer>
 </body>
 </html>
